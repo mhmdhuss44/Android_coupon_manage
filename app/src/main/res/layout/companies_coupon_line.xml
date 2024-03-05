@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="185dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/couponForCompnay_lvLine_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="185dp"
+        android:background="#35C8F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/couponForCompnay_endDateTV"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/couponForCompnay_priceTV"
+            app:layout_constraintStart_toStartOf="@+id/couponForCompnay_priceTV"
+            app:layout_constraintTop_toBottomOf="@+id/couponForCompnay_priceTV" />
+
+
+        <TextView
+            android:id="@+id/couponForCompnay_titleTV"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/couponForCompnay_priceTV"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/couponForCompnay_tvAmount"
+            app:layout_constraintStart_toStartOf="@+id/couponForCompnay_tvAmount"
+            app:layout_constraintTop_toBottomOf="@+id/couponForCompnay_tvAmount" />
+
+        <TextView
+            android:id="@+id/couponForCompnay_tvAmount"
+            android:layout_width="190dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="29dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/couponForCompnay_titleTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/couponForCompnay_ivImage"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/couponForCompnay_titleTV"
+            app:layout_constraintHorizontal_bias="0.388"
+            app:layout_constraintStart_toStartOf="@+id/couponForCompnay_titleTV"
+            app:layout_constraintTop_toBottomOf="@+id/couponForCompnay_titleTV"
+            app:srcCompat="@drawable/abstract_feather" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

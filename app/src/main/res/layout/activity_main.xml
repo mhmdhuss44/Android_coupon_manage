@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:paddingVertical="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="385dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcoming"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/main_etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background"
+                android:backgroundTint="#FFFFFF"
+                android:drawableStart="@drawable/user1"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#111111"
+                android:textColorHighlight="#68878286"
+                android:textColorHint="#B42D6A93"
+                android:textColorLink="#F8F4F4"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/main_etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background"
+                android:backgroundTint="#FFFFFF"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#111111"
+                android:textColorHighlight="#68878286"
+                android:textColorHint="#6292B1"
+                android:textColorLink="#F4EFEF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="266dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/btn_dropdown" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_btnLogin"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#087ED1"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="263dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_user" />
+
+    <TextView
+        android:id="@+id/textViewWelcoming"
+        android:layout_width="247dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="MEMBER LOGIN"
+        android:textColor="#2A3439"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

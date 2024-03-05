@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_comp"
+    >
+
+    <TextView
+        android:id="@+id/myCouponFrag_tvTitle"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="My Purchased Coupons"
+        android:textColor="#282626"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/myCouponFrag__lvMyCoupons"
+        app:layout_constraintTop_toBottomOf="@+id/myCouponFrag_tvTitle">
+
+        <TextView
+            android:id="@+id/myCouponFrag_tvFilterBy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Filter By: "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/myCouponFrag_etMaxPrice"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:hint="Max Price Filter"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#1F1D1D" />
+
+        <Spinner
+            android:id="@+id/myCouponFrag_sbCouponCategory"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myCouponFrag__lvMyCoupons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_ground_comp"
+        android:dividerHeight="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/myCouponFrag_btnInfo"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#D5DEE7"
+        android:text="Info"
+        android:textColor="#030404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toEndOf="@+id/myCouponFrag_tvTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
